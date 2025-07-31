@@ -18,6 +18,7 @@
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -26,35 +27,45 @@
 
 @keyframes orbit {
   from {
-    transform: rotate(0deg) translateX(120px) rotate(0deg);
+    transform: rotate(0deg) translateX(96px) rotate(0deg);
   }
+
   to {
-    transform: rotate(360deg) translateX(120px) rotate(-360deg);
+    transform: rotate(360deg) translateX(96px) rotate(-360deg);
   }
 }
 
 @keyframes wave1 {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateX(0) translateY(0);
   }
+
   50% {
     transform: translateX(-25px) translateY(-10px);
   }
 }
 
 @keyframes wave2 {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateX(0) translateY(0);
   }
+
   50% {
     transform: translateX(25px) translateY(-15px);
   }
 }
 
 @keyframes wave3 {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateX(0) translateY(0);
   }
+
   50% {
     transform: translateX(-15px) translateY(-8px);
   }
@@ -78,7 +89,7 @@
 }
 
 .animate-orbit {
-  animation: orbit 12s linear infinite;
+  animation: orbit 15s linear infinite;
 }
 
 .animate-wave-1 {
